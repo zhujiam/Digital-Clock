@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module C_hours(clk,st_clk,st_alam,reset,control,hour_g,hour_d);
-input  clk,st_clk,st_alam,reset,control; // Ê±ÖÓ¡¢resetĞÅºÅ¡¢ÉèÖÃÄÖÖÓĞÅºÅÒÔ¼°µ÷·Ö¿ØÖÆĞÅºÅ
-output reg [3:0] hour_g,hour_d; //  ·Ö±ğ±£´æĞ¡Ê±µÄÊ®Î»ºÍ¸öÎ»?
+input  clk,st_clk,st_alam,reset,control; // æ—¶é’Ÿã€resetä¿¡å·ã€è®¾ç½®é—¹é’Ÿä¿¡å·ä»¥åŠè°ƒåˆ†æ§åˆ¶ä¿¡å·
+output reg [3:0] hour_g,hour_d; //  åˆ†åˆ«ä¿å­˜å°æ—¶çš„åä½å’Œä¸ªä½
 
 
 reg control_;
