@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 
 module C_mins(clk,st_clk,st_alam,reset,control,minute_g,minute_d,cout_m);
-input  clk,st_clk,st_alam,reset,control; // Ê±ÖÓ¡¢resetĞÅºÅ¡¢ÉèÖÃÄÖÖÓĞÅºÅÒÔ¼°µ÷·Ö¿ØÖÆĞÅºÅ
-output reg cout_m;  // ·Ö½øÎ»
-output reg [3:0] minute_g,minute_d; //  ·Ö±ğ±£´æ·ÖµÄÊ®Î»ºÍ¸öÎ»?
+input  clk,st_clk,st_alam,reset,control; // æ—¶é’Ÿã€resetä¿¡å·ã€è®¾ç½®é—¹é’Ÿä¿¡å·ä»¥åŠè°ƒåˆ†æ§åˆ¶ä¿¡å·
+output reg cout_m;  // åˆ†è¿›ä½
+output reg [3:0] minute_g,minute_d; //  åˆ†åˆ«ä¿å­˜åˆ†çš„åä½å’Œä¸ªä½
 
 reg control_;
 always@(*)
