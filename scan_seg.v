@@ -2,7 +2,7 @@
 
 module scan_seg(
     input rst,clk,setAlarm,
-    input [3:0] hour_g,hour_d,minute_g,minute_d,second_g,second_d,hour_g_al,hour_d_al,minute_g_al,minute_d_al,
+    input [3:0] hour_g,hour_d,minute_g,minute_d,second_g,second_d,hour_g_al,hour_d_al,minute_g_al,minute_d_al, //å½“å‰æ—¶é—´ä»¥åŠè®¾ç½®çš„é—¹é’Ÿæ—¶é—´
     output [7:0] DIG,Y
     );
     reg clkout;
@@ -42,7 +42,7 @@ module scan_seg(
     time_display u4(tmp_sec_g,seg_outsg);
     time_display u5(tmp_sec_d,seg_outsd);
     
-    assign Y = {1'b1, (~Y_r[6:0])}; // ÊıÂë¹ÜÊ¹ÄÜĞÅºÅ£¬Ğ¡ÊıµãÓÀÔ¶²»ÁÁ
+    assign Y = {1'b1, (~Y_r[6:0])}; // æ•°ç ç®¡ä½¿èƒ½ä¿¡å·ï¼Œå°æ•°ç‚¹æ°¸è¿œä¸äº®
     assign DIG = ~DIG_r;
     
     always@(posedge clk or negedge rst)  // frequency division
